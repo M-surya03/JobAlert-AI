@@ -1,0 +1,10 @@
+google-api-python-client>=2.0
+google-auth>=2.0
+google-auth-oauthlib>=1.0
+google-auth-httplib2>=0.2
+python-dotenv>=1.0
+openai>=1.0
+twilio>=9.0
+apscheduler>=3.10,<4
+tenacity>=8.0
+pytest>=8.0

@@ -1,0 +1,12 @@
+services:
+  jobalert:
+    build: .
+    container_name: jobalert-ai
+    env_file:
+      - .env
+    volumes:
+      - ./credentials:/app/credentials
+      - ./processed_email_state:/app/state
+    environment:
+      PROCESSED_EMAILS_FILE: /app/state/processed_emails.json
+    restart: unless-stopped
